@@ -1,0 +1,352 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+
+}
+ HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+
+}
+body {
+    line-height: 1;
+    
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: ’’;
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.header_cadre{
+  color:rgb(255, 255, 255);
+  
+}
+
+.header_cadre:hover{
+  padding:1px;
+  color:rgb(255, 255, 255);
+  border: 2px solid rgba(255, 255, 255);
+}
+
+                  /*------------------------CSS-------------------------*/
+:root{
+  --main-color-text: white;
+  --main-background-color: black;
+  --main-color-article: #BABECC;
+}
+html, body{
+  height: 100%;
+  background-color: var(--main-color-article);
+  color: var(--main-color-text);
+  font-family: 'Viaoda Libre', cursive;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0.1px 3px 0px;
+  background-color: rgba(231, 225, 225, 0.3);
+  width: 100%;
+  height: 105px;
+  letter-spacing:0.1em;
+  font-size: 25px;
+}
+p{
+  display: none;
+}
+svg{
+  height: 20px;
+}
+
+ .header_logo{
+      width: 8%;
+      margin-left: 2%;
+      margin-bottom: 1px;
+      
+  
+  }
+
+  .header_img_logo{
+    background-color: rgba(238, 229, 229, 0.7);
+    border-radius: 30%;
+  }
+
+ .header_link{
+  width: 70%;
+  display: inline-flex;
+}
+
+.header_login{
+  width: 28%;
+  margin-right: 2%;
+  display: flex;
+  justify-content: end;
+} 
+
+.header_nav{
+    width: 30%;
+    display: inline-flex;
+    justify-content: center;
+} 
+
+.header_overlay,.header_icon {
+  display: none;
+} 
+.btn-logging{
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: 'Viaoda Libre', cursive;
+  letter-spacing:0.1em;
+  font-size: 18px;
+}
+    /*=================================dropdown===============================*/
+
+    .navbar {
+      width:30%;
+      overflow: hidden;
+      text-align: center;
+      display: inline-flex;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .navbarCalendar {
+      width:30%;
+      overflow: hidden;
+      
+      display: inline-flex;
+      justify-content: center;
+      
+    }
+    
+   
+    .dropdown {
+      overflow: hidden;
+    }
+
+    .dropdownCalendar {
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .dropdownCalendar .dropbtn {
+      font-size: 16px;  
+      border: none;
+      outline: none;
+      color: white;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+  
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      color: rgba(255, 255, 255, 0.568);
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      color:#f1f1f1;
+      background-color: #f9f9f900;
+      min-width: 160px;
+      
+      box-shadow: 0px 4px 6px 0px rgba(255, 255, 255, 0.4);
+      z-index: 1;
+    }
+
+    .dropdownCalendar-content {
+      display: block;
+      position: absolute;
+      right: 1.3%;
+      top:18.3%;
+      border-radius: 0.4em;
+      letter-spacing: 0;
+      width: 20%;
+      box-shadow:      0 0 0 1px rgba(0, 0, 0, 0.05), inset 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+          z-index: 1;
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      font-size: inherit;
+
+    }
+    
+    .dropdown-content a:hover {
+      background-color: rgba(221, 221, 221, 0.267);
+      color: rgb(255, 255, 255);
+
+    }
+    
+    .dropdown:hover .dropdown-content,.dropdownCalendar:hover .dropdownCalendar-content {
+      display: block;
+      
+      
+    }
+
+
+@media screen and (max-width: 1550px) {
+      .header_logo{
+        width: 13%;
+
+
+    }
+
+    .header_link{
+      width: 70%;
+
+    }
+
+    .header_login{
+      width: 30%;
+      
+    
+    } 
+}
+
+@media screen and (max-width: 1100px) {
+  .header_link,.header_login{
+    display:none;
+  }
+
+  .header_overlay{
+    display: block;
+  }
+
+    .header_logo{
+        width: 87%;
+        margin-left: 2%;
+        margin-bottom: 1px;
+    
+    }
+
+     .header_icon {
+      width: 5%;
+      margin-right: 5%;
+      margin-bottom: 13px;
+      display: block;
+    } 
+  
+
+   .header_overlay {
+    overflow: none;
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(221, 218, 218, 0.97);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .header_overlay-content {
+    display: block;
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .btn-logging{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #585656;
+  transition: 0.3s;
+  font-family: 'Viaoda Libre', cursive;
+}
+
+.btn-logging:hover{
+  color:#f1f1f1;
+}
+  .header_overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #585656;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .header_overlay a:hover, .header_overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .header_overlay .header_closebtn {
+    display: block;
+    position: absolute;
+    right: 25px;
+    font-size: 60px;
+  }
+}  
+  @media screen and (max-width: 450px) {
+    .header_overlay a {
+      font-size: 24px;}
+    .header_overlay {
+      position: absolute;
+      top: 0px;
+      right: 35px;
+      font-size: 50px;
+    }
+
+    .header_logo{
+        width: 80%;
+        margin-left: 2%;
+        margin-bottom: 1px;
+    
+    }
+
+     .header_icon {
+       width:13%;
+       margin-right: 5%;
+       margin-bottom: 13px;
+      display: block;
+    } 
+
+    
+
+
+    
+  } 

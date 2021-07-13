@@ -1,0 +1,86 @@
+:root{
+		--main-background-titre-image: black;
+		--main-background-produit-article: #e8e8e8;
+	    --main-color-text-shadow-white: #FFF;
+	    --main-background-produit: #c94663;
+}
+
+.background-produit{
+background: #c94663 url('../storage/image/fondHommage.png');
+}
+.cadreProduit{
+width: 100%;
+}
+.h1-produit{
+	padding-top: 20px;
+	text-align: center;
+	font-size: xx-large;
+	margin-bottom: 10px;
+}
+.positionTitreProduit{
+	position: relative;
+	transition: transform .2s; /* Animation */
+}
+.flex-container-produit{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: var(--main-background-titre-image);
+	color: #BABECC;
+	text-shadow: 1px 1px 0 var(--main-color-text-shadow-white);
+	width: 100%;
+	height: 70px;
+	opacity: 60%;
+	letter-spacing: 0.1rem;
+}
+/*============Responsive Ordinateur*/
+@media screen and (min-device-width: 1004px) {
+
+.positionTitreProduit:hover{
+	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	transform: scale(1.1); 
+}
+.positionTitreProduit{
+	position: relative;
+	transition: transform .2s; /* Animation */
+}
+.cadreProduit{
+	height: 300px;
+	margin: 1%;
+	padding: 2%;
+	width: 90%;
+	border-radius: 10%;
+	background: var(--main-background-produit-article) url("../storage/image/fondHommage.png");
+	grid-area: img;
+}
+.flex-container-produit{
+	position: absolute;
+	bottom: 14px;
+	left: 20px;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	margin-left: 2%;
+	width: 86%;
+}
+#grid-container-produit{
+	display: grid;
+	margin: auto;
+	margin-top: 20px;
+	width: 90%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 0fr 0fr 0fr 0.5fr;
+	grid-template-areas:
+	"img img img"
+	"img img img"
+	"img img img"
+	"btn btn btn";
+	/*border: solid 3px white;*/
+	text-align: center;
+	align-items: center;
+}
+}

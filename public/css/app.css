@@ -1,0 +1,249 @@
+.titre-article{
+	display: block;
+	position: absolute;
+	bottom: 1px;
+	color: var(--main-color-text);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 100%;
+	letter-spacing: 0.1rem;
+}
+.assoNom{
+	font-weight: bolder;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.cadreImage{
+	width: 100%;
+	grid-area: img;
+}
+.cadreImage2{
+	width: 100%;
+}
+.positionTitre{
+	position: relative;
+}
+.flex-container-titre-image{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 20px;
+	background: linear-gradient(to right top, #c94663, #c94663);
+	opacity: 70%;
+}
+.articleSmartphone{
+	display: none;
+}
+.btn-FB-sticky{
+	position: sticky;
+	bottom: 0;
+	right: 0;
+	height: 30px;
+}
+.voirFB{
+height: 40px;
+align-items: center;
+background-color: #8B4513 ;
+border-radius: 30%;
+position: fixed;
+bottom: 0;
+letter-spacing: 0;
+box-shadow:5px 5px 10px white;
+}
+.logoArrow{
+	width: 60px;
+	height:60px;
+}
+.logoArrow:hover{
+	background-color: rgb(172, 164, 164);
+	border-radius: 50%;
+}
+.titreArticle{
+	margin: 20px;
+	font-size: 30px;
+	font-weight: bold;
+}
+.message{
+	text-align: justify;
+	text-indent: 2em;
+	margin: 15px;
+	padding-bottom: 50px;
+	margin-bottom: 0;
+}
+.lien-color{
+	color: var(--main-color-text);
+	margin: 2%;
+	padding: 0.7%;
+	border: solid 2px white;
+	width: max-content;
+	display:flex;
+	justify-self: center;
+}
+.article{
+	text-align: center;
+	letter-spacing: 0.2em;
+	line-height: 1.2em;
+	background-color: rgb(178,34,34);
+}
+#show{
+	display: block;
+}
+#flex-container-accueil{
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: start;
+	width: 70%;
+	height: 80%;
+	margin: auto;
+	text-align: center;
+	margin-top: 15px;
+}
+#flex-container-article{
+	display: flex;
+	flex-direction: column;
+	background-image: url('../storage/image/flex-container-article-bg2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#flex-container-btn-fb{
+	display: flex;
+	justify-content: flex-end;
+}
+#btn-nav{
+	text-align: center;
+	background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+      ), 
+		url('../storage/image/btn-nav-background1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 10px;
+}
+[aria-label="Pagination Navigation"] .relative{
+	font-size: 30px;
+	display: inline-block;
+	color: var(--main-color-text);
+	margin-top: 5px;
+}
+#Jordan{
+	background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+      ), 
+		url('../storage/image/Background_Nadia.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/*============Responsive Ordinateur*/
+@media screen and (min-device-width: 1004px) {
+
+html, body{
+	background-color: #BABECC;
+	background-image: none;
+	width: 100%;
+	grid-area: img;
+}
+.assoNom{
+	padding-bottom: 20px;
+	font-weight: bolder;
+	font-size: 40px;
+	text-transform: uppercase;
+	width: 35%;
+}
+.cadreImage{
+	height: 400px;
+}
+.cadreImage2{
+	grid-area: img2;
+	width: 80%;
+	margin-left: 8%;
+	margin-top: 5%;
+}
+.titreArticle{
+	grid-area: titre;
+}
+.message{
+	grid-area: message;
+	font-size: 20px;
+}
+.btn-retour{
+	text-align: center;
+}
+.voirFB{
+	height: 50px;
+}
+
+.logoArrow{
+	width: 80px;
+	height:80px;
+}
+.h1-article{
+	text-align: center;
+	font-size: xx-large;
+	margin-top: 20px;
+}
+.article{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0fr 1fr;
+	grid-template-areas:
+	"img2 titre"
+	"img2 message";
+	margin: 5%;
+	padding: 3%;
+	box-shadow: 20px 20px 10px black;
+	margin-bottom: 8%;
+	text-align: center;
+	letter-spacing: 0.2em;
+	line-height: 1.2em;
+	background-color: rgb(178,34,34);
+}
+.champ{
+	margin-top: 20px;
+}
+
+#flex-container-article{
+	display: grid;
+	width: 100%;
+	height: 100%;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 0fr 0fr 0.2fr;
+	grid-template-areas:
+	"img img img"
+	"img img img"
+	"img img img"
+	"btn btn btn";
+	text-align: center;
+	align-items: center;
+}
+#flex-container-accueil{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 97%;
+	height: 70%;
+	text-align: center;
+	margin-top: 6%;
+	line-height: 3em;
+}
+[aria-label="Pagination Navigation"] .relative{
+	text-align: center;
+	font-size: 30px;
+	display: inline-block;
+	width: 20%;
+	color: var(--main-color-text);
+}
+#btn-nav{
+	text-align: center;
+	grid-area: btn;
+}
+}

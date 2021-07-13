@@ -1,0 +1,41 @@
+.img-bio{
+	width: 100%;
+}
+.message-bio{
+	text-align: justify;
+		letter-spacing: 0.2em;
+		margin: 20px;
+}
+.titre-bio{
+	text-align: center;
+	font-size: x-large;
+	margin: 5px;
+}
+
+/*============Responsive Ordinateur*/
+@media screen and (min-device-width: 1004px) {
+
+.grid-container-bio{
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+	grid-template-rows: 0.2fr 0.02fr;
+	grid-template-areas: 
+	"img message";
+	margin: 20px;
+	margin-bottom: 0;
+}
+.img-bio{
+	grid-area: img;
+}
+.titre-bio{
+	text-align: center;
+	font-size: x-large;
+	margin: 5px;
+	font-weight: bold;
+	grid-area: titre;
+}
+.message-bio{
+	grid-area: message;
+	font-size: 20px;
+}
+}

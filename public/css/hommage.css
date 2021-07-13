@@ -1,0 +1,86 @@
+.background-hommage{
+	background: #c94663 url('../storage/image/fondHommage.png');
+}
+.h1-hommage{
+	padding-top: 20px;
+	text-align: center;
+	font-size: xx-large;
+}
+
+.invalid-feedback{
+    color: rgb(224, 113, 113);
+    margin-bottom: 10px;
+}
+.div-back{
+	text-align: right;
+	padding: 10px;
+	width: 100%;
+	height: 50px;
+}
+.div-back-btn{
+	font-size: 50px;
+	color: white;
+}
+.img-hommage{
+	width: 100%;
+}
+.titre-hommage{
+	text-align: center;
+	font-size: x-large;
+	margin: 5px;
+	font-weight: bold;
+}
+.titre-hommage-admin{
+	text-align: center;
+	margin: 10px;
+}
+.message-hommage{
+	text-align: justify;
+	margin: 10px;
+	letter-spacing: 0.2em;
+	font-size: 20px;
+}
+.container-flex-container-liseret{
+	display: flex;
+	justify-content: center;
+}
+.liseret_hommage{
+	width: 70%;
+	margin: 10px;
+}
+/*============Responsive Ordinateur*/
+@media screen and (min-device-width: 1004px) {
+
+.pc-hommage{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 0.2fr 1fr;
+	grid-template-areas:
+	"img titre"
+	"img message";
+	margin: 20px;
+}
+.pc-hommage:nth_child(even){
+	grid-template-areas:
+	"titre img"
+	"message img";
+}
+
+.img-hommage{
+	grid-area: img;
+}
+.message-hommage{
+	grid-area: message;
+}
+.titre-hommage{
+	grid-area: titre;
+}
+.liseret_hommage{
+	width: 30%;
+	margin: 10px;
+}
+.div-back-btn{
+	font-size: 80px;
+	color: white;
+}
+}

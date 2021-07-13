@@ -1,0 +1,16 @@
+.img-logo{
+	width: 100%;
+}
+.login-accueil{
+	text-align: center;
+}
+/*============Responsive Ordinateur*/
+@media screen and (min-device-width: 1004px) {
+
+.img-logo{
+	width: 30%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+}

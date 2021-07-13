@@ -1,0 +1,167 @@
+.text{
+    color: #fff;
+    font-size: 40px;
+
+}
+.backimg{
+    background-image: linear-gradient(rgba(46, 108, 128, 0.5), rgba(240, 240, 215, 0.5)), url('../storage/image/pexels-jessika-arraes-7763841.jpg');
+    
+}
+
+.invalid-feedback{
+    color: rgb(224, 113, 113);
+}
+.Form_icon{
+    position: absolute;
+    bottom: 15%;
+    right:3%;
+    
+}
+.Form_icon2{
+    position: absolute;
+    bottom: 5%;
+    right:3%;
+    
+}
+.Form_overlay-content{
+    display: block;
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.Confirm_overlay-content{
+    display: block;
+    position: relative;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.Form_closebtn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    position: absolute;
+    color: #fff;
+    right: 38px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+
+
+.Form_overlay{
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(47, 49, 47);
+    background-color: rgba(0,0,0,.95);
+    overflow-x: hidden;
+    transition: 0.5s; 
+}
+
+
+
+
+.Form_titre{
+    font-size: xx-large;
+    padding: 30px;
+    color: rgba(250,250,250);
+}
+
+.Form_control{
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 200;
+    color: #fff;
+    background-color: rgba(250, 250, 250, 0.15);
+    outline: none;
+    border: none;
+    box-shadow: none;
+    line-height: 40px;
+    height: 40px;
+    width: 43%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+.Form_message{
+    
+    height: 165px;
+    max-height: 220px;
+    max-width: 100%;
+}
+
+.Form_btn{
+    border-radius: 0px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: transparent;
+    color: #fff;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #fff;
+    display: inline-block;
+    padding: 0px 0px 3px 0px;
+    transition: all 0.5s;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    cursor: pointer;
+}
+.desabo{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding-top: 90px;
+    height: 100%;
+}
+
+@media screen and (max-width:1400px){
+    
+    .Form_control{
+        width: 63%;
+    }
+}
+@media screen and (max-width:1374px){
+    
+    .Form_icon{
+        position: absolute;
+        bottom: 18%;
+        right:3%;
+        
+    }
+    .Form_icon2{
+        position: absolute;
+        bottom: 8%;
+        right:3%;
+        
+    }
+}
+@media screen and (max-width:750px){
+    
+    .Form_control{
+        width: 83%;
+    }
+
+    .Form_icon{
+        display:none;
+        
+    }
+    .Form_icon2{
+        display:none;
+    }
+}

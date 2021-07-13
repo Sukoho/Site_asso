@@ -1,0 +1,173 @@
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+
+h5{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+}
+
+a:hover,a:hover #myBtn{
+  color: rgb(197, 182, 182);
+  cursor: pointer;
+}
+
+.alldays{
+  color: rgba(255, 255, 255, 0.70);
+  border: none;
+  background-color: transparent;
+}
+
+.alldays:hover{
+  color: rgb(218, 209, 209);
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+ .event{
+  padding: 5px;
+  border-radius: 18px;
+  background: #d5ecd68a;
+  color: rgb(3, 3, 3) !important;
+  
+}
+.beforedays{
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+  padding:0;
+  color: rgba(255, 255, 255, 0.70);
+}
+ .event:hover{
+  padding: 5px;
+  border-radius: 18px;
+  background: #ffffff8a;
+  color: rgb(3, 3, 3) !important;
+  cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    border-radius: 0.4em;
+    border: 0.1px solid rgb(241, 223, 223);
+    
+}
+.buttonAnnee{
+  padding: 0%;
+  margin: 0%;
+  background-color: transparent;
+  color:rgb(224, 222, 222);
+  border: none;
+  width: max-content;
+  font-size:xx-large;
+}
+.buttonMois{
+    margin: 0%;
+  background-color: transparent;
+  color:rgb(219, 219, 219);
+  border: none;
+  width: max-content;
+  font-size:x-large;
+}
+.buttonMois:hover{
+  color:rgba(187, 184, 183, 0.596);
+  font-size: x-large;
+  cursor: pointer;
+ 
+}
+
+.month {
+  padding:2px;
+  width: 100%;
+  background: transparent;
+  text-align: center;
+  display:flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  border-radius: 0.4em;
+}
+
+.year {
+  padding:2px;
+  width: 100%;
+  background: transparent;
+  text-align: center;
+  display:flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.left{
+  width: 20%;
+  display: flex;
+  justify-content: end;
+}
+ .right{
+  display: flex;
+  width: 20%;
+  justify-content: start;
+}
+ .centre{
+   padding-top: 6px;
+  width: 50%;
+  color:white;
+  text-transform: uppercase;
+  font-size:x-large;
+  
+}
+
+
+.weekdays {
+  margin: 0;
+  padding: 5px 0;
+  background-color: transparent;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 11.5%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.days {
+  padding: 5px 0;
+  background:transparent;
+  margin: 0;
+  border-radius: 0.4em;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 12.1%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: rgb(214, 214, 214);
+}
+
+.days li .active {
+  color: rgb(255, 255, 255);
+  padding: 0.2em 0px 0.2em 0px;
+  cursor: pointer;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:1444px) {
+  .weekdays li, .days li {width: 12%;}
+}
+
+@media screen and (max-width: 1182px) {
+  .weekdays li, .days li {width: 10%;}
+  .days li .active {padding: 2px;}
+}
+
+
+
+ 
